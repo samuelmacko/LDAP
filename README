@@ -1,0 +1,29 @@
+ISA - LDAP server
+
+Autor: Samuel Macko xmacko10
+
+Popis: Zjednodušený LDAP server
+
+Použitie:
+./myldap {-p <port>} -f <súbor>
+./myldap -h
+	-p : nepovinný parameter, umožňuje špecifikovať port na ktorom bude server počúvať, ak nieje zadaný tak server počúva na porte 389
+	-f : cesta k textovému súboru vo formáte csv
+	-h : zobrazí nápovedu použitia programu
+
+Príklad použitia:
+./myldap -p 45678 -f "test.cvt"
+./myldap -f "test.cvt"
+
+Odovzdané súbory:
+main.cpp
+main.h
+LDAP_tools.cpp
+LDAP_tools.h
+Network.cpp
+Network.h
+Parameters.cpp
+Parameters.h
+Makefile
+Dokumentácia
+README
